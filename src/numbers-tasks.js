@@ -630,11 +630,7 @@ function getHypotenuse(a, b) {
  * 15 => 8
  */
 function getCountOfOddNumbers(number) {
-  let count = 0;
-  for (let i = 1; i <= number; i += 2) {
-    count++;
-  }
-  return count;
+  return Math.ceil(Math.abs(number) / 2);
 }
 
 module.exports = {
